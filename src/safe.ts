@@ -1,6 +1,6 @@
 import Denomander from "https://deno.land/x/denomander/mod.ts";
 import { promptSecret } from "@std/cli/prompt-secret";
-import * as pkg from "./deno.json" with { type: "json" };
+import * as pkg from "../deno.json" with { type: "json" };
 import { decrypt, encrypt } from "./cypher.ts";
 import { getPayload } from "./utils.ts";
 
