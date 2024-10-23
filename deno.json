@@ -4,13 +4,13 @@
     "version": "1.0.0",
     "tasks": {
         "start": "deno run -A ./src/safe.ts",
-        "compile:linuxx86": "deno compile -A --output ./build/linux/safe-x86_64 --target x86_64-unknown-linux-gnu ./src/safe.ts",
-        "compile:linuxarm": "deno compile -A --output ./build/linux/safe-aarch64 --target aarch64-unknown-linux-gnu ./src/safe.ts",
+        "compile:linuxx86": "deno compile -A --output ./build/linux-x86_64/safe --target x86_64-unknown-linux-gnu ./src/safe.ts",
+        "compile:linuxarm": "deno compile -A --output ./build/linux-aarch64/safe --target aarch64-unknown-linux-gnu ./src/safe.ts",
         "compile:linux": "deno run compile:linuxarm && deno run compile:linuxx86",
         "compile:windows": "deno compile -A --output ./build/win/ --target x86_64-pc-windows-msvc ./src/safe.ts",
         "compile:mac": "deno run compile:macx86 && deno run compile:macarm",
-        "compile:macx86": "deno compile -A --output ./build/mac/safe-aarch64 --target aarch64-apple-darwin ./src/safe.ts",
-        "compile:macarm": "deno compile -A --output ./build/mac/safe-x86_64 --target x86_64-apple-darwin ./src/safe.ts",
+        "compile:macx86": "deno compile -A --output ./build/mac-aarch64/safe --target aarch64-apple-darwin ./src/safe.ts",
+        "compile:macarm": "deno compile -A --output ./build/mac-x86_64/safe --target x86_64-apple-darwin ./src/safe.ts",
         "compile": "deno run compile:mac && deno run compile:windows && deno run compile:linux"
     },
     "imports": {
