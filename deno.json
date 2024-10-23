@@ -1,0 +1,17 @@
+{
+    "title": "Safe",
+    "description": "AES256 GCM CLI encryption utility",
+    "version": "1.0.0",
+    "imports": {
+        "@std/cli": "jsr:@std/cli@^1.0.6",
+        "@std/crypto": "jsr:@std/crypto@^1.0.3",
+        "@std/encoding": "jsr:@std/encoding@^1.0.5",
+        "@std/fs": "jsr:@std/fs@^1.0.4",
+        "@std/path": "jsr:@std/path@^1.0.6",
+        "@std/text": "jsr:@std/text@^1.0.7"
+    },
+    "fmt": {
+        "indentWidth": 4,
+        "singleQuote": false
+    }
+}
